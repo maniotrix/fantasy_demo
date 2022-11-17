@@ -1,4 +1,4 @@
-import 'package:fantasy_demo/model.dart';
+import 'package:fantasy_demo/models.dart';
 import 'package:flutter/material.dart';
 
 class ListDisplay extends StatefulWidget {
@@ -9,7 +9,7 @@ class ListDisplay extends StatefulWidget {
 }
 
 class _ListDisplayState extends State<ListDisplay> {
-  List<Contest> litems = [];
+  List<String> litems = ["One", "Two", "Three"];
   @override
   Widget build(BuildContext ctxt) {
     return Column(
@@ -18,9 +18,7 @@ class _ListDisplayState extends State<ListDisplay> {
             child: ListView.builder(
                 itemCount: litems.length,
                 itemBuilder: (BuildContext ctxt, int index) {
-                  Contest contest = 
-
-                  return Text(litems[Index]);
+                  return Text(litems[index]);
                 }))
       ],
     );
